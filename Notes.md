@@ -124,3 +124,29 @@ if pass by `Primitive data`, it passes by `value`
 How to pass by reference and values?
 
 Examples here: [D6. By Value, By Reference](./D6_By_Value_By_Reference)
+
+
+## D7: Immediately Invoked Function Expressions(IIFEs)
+
+
+#### Scope:
+
+Where in code you have access to particular variable or function.
+
+`Immediately invoked function expression`  just a function immediately invoked.
+
+just add a `()` to immediately invoke the function:
+
+··· 
+
+(
+    function([parameter_name]){
+        var firstname= 'John';
+        console.log(firstname);
+    }([parameters])
+
+);
+
+···
+
+and variables in different scopes are isolated. they are totally different variables in different memory segments
