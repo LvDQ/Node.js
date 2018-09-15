@@ -107,3 +107,20 @@ we can set `prototype chain` to add the objects or functions:
 Why we need Person.prototype.greet but not writing in function Person?
 
 Because we want to use function Person to create a new Object, but don't want to print it out, but we might still want to print in the future
+
+
+## D6: By value, By reference
+
+#### Primitive: 
+
+A type of data that represents a single value.
+
+Like a number or a string. In other words, `not an object`.
+
+Node.js takes advatage of this `passing by reference` `when it comes to objects.`
+
+if pass by `Primitive data`, it passes by `value`
+
+How to pass by reference and values?
+
+Examples here: [D6. By Value, By Reference](./D6_By_Value_By_Reference)
