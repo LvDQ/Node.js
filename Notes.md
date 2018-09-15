@@ -48,3 +48,37 @@ A reusable block of code whose existence does not accidentally impact other code
 ### Invoke: 
 run the function
 
+
+## D3: Build a Modeule
+
+we can import other .js files to run in specific place by using function `require()` 
+
+`syntax:` requie('./PATH.js');
+
+if we want to use only one function in the Modeule
+
+then in the modeule files: 
+
+	module .exports = [function_variable];
+
+then go to original files run by:
+
+	var [name] = require('[PATH]');
+	[name]();
+
+
+## D4: Object Literals
+
+if we want to build a structure, just use `{}` and link methods or objects by using `,`, for example:
+
+	var person = {
+    	firstname: 'John',
+    	lastname: 'Doe',
+    	greet: function(){
+        	console.log('Hello,' + this.firstname +' '+this.lastname);
+    	}
+	};
+
+we can recall the object or method by `.` ,such as `person.greet();`  - standard way
+
+we can also use bracket `[]` , such as `console.log(person['firstname'])` and `person['greet']();`
