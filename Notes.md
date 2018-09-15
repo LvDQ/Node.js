@@ -150,3 +150,33 @@ just add a `()` to immediately invoke the function:
 ```
 
 and variables in different scopes are isolated. they are totally different variables in different memory segments
+
+
+## D9 : How do node modules really work?: module.exports and require
+
+`require` is a function, that you pass a 'path' too.
+
+`module.exports` is what the require function returns.
+
+This works because `your code is actually wrapped in a function` that is given these things as function parameters.
+
+
+## Json:
+
+`"Jaascript object notation" - A standard for structuring data that is inspired by javascript object literals`
+
+Javascript engines are built to understand it.
+```
+{
+	"firstname": "John",
+	"lastname": "Doe",
+	"address": {
+		"street": "101 Main st.",
+		"city": "New York",
+		"state": "NY"
+	}
+}
+
+```
+
+which is pretty easy to parse.

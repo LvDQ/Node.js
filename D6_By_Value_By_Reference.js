@@ -18,6 +18,6 @@ function changeObj(d){
     d.prop2 = {};
 }
 var c = {}; //create new object;
-c.prop1 = {}; //init c.prop1 is an empty object
+c.prop1 = {}; //init c.prop1 is an empty object, no c.prop2 exsits
 changeObj(c);
-console.log(c); // output
+console.log(c); // output Object{prop1:[Function],prop2:Object}
