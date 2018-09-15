@@ -137,7 +137,7 @@ Where in code you have access to particular variable or function.
 
 just add a `()` to immediately invoke the function:
 
-··· 
+```
 
 (
     function([parameter_name]){
@@ -147,6 +147,6 @@ just add a `()` to immediately invoke the function:
 
 );
 
-···
+```
 
 and variables in different scopes are isolated. they are totally different variables in different memory segments
