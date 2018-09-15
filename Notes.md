@@ -82,3 +82,28 @@ if we want to build a structure, just use `{}` and link methods or objects by us
 we can recall the object or method by `.` ,such as `person.greet();`  - standard way
 
 we can also use bracket `[]` , such as `console.log(person['firstname'])` and `person['greet']();`
+
+
+## D5: Prototypal Inheritance and function expressions
+
+#### Inheritance:
+
+One object gets access to the properties and methods of another object.
+
+we can set `prototype chain` to add the objects or functions: 
+
+	function Person(firstname, lastname){
+    	this.firstname = firstname;
+    	this.lastname = lastname;
+	};// this ";" actually doesn't matter exist or not
+	Person.prototype.greet =function(){
+    	console.log('Hello, '+this.firstname +' '+ this.lastname);
+	}
+	var john = new Person('John', 'Doe');
+	console. log(john.firstname);
+	var jane = new Person('Jane','Doe');
+	jane.greet();
+
+Why we need Person.prototype.greet but not writing in function Person?
+
+Because we want to use function Person to create a new Object, but don't want to print it out, but we might still want to print in the future
