@@ -1,18 +1,20 @@
 
 9/13/2018
-### Arguments: values you  give your program  that affect how it runs, essentially passing  parameters to a function.
+### Arguments: 
+values you  give your program  that affect how it runs, essentially passing  parameters to a function.
 
 
-### V8(javascript engine ) core of node.js written by c++
+- V8(javascript engine ) core of node.js written by c++
 
-### ECMA Script: the standard javascript is based on
+### ECMA Script: 
+the standard javascript is based on
 
 
-### v8 actually written by c++ so it can run by c++ files with #include <include/v8.h>, so node.js also accpet javascript
+- v8 actually written by c++ so it can run by c++ files with #include <include/v8.h>, so node.js also accpet javascript
 
-### client asks for services request Server performs services response to client.
+- client asks for services request Server performs services response to client.
 
-### the benifit of using node.js is use the same language betwwen browser and web servers.
+- the benifit of using node.js is use the same language betwwen browser and web servers.
 
 ## javascript benifits:
 
@@ -30,8 +32,15 @@
 
 ### Node is a framework to help 
 
-### how to run a js file : 1.install node.js 2. open node.js command prompt 3. node +[file name]
+### how to run a js file : 
+1.install node.js 
+2. open node.js command prompt 
+3. node +[file name]
+4. help with Visual Studio Code
 
-### MODULE: A reusable block of code whose existence does not accidentally impact other code
+### MODULE: 
+A reusable block of code whose existence does not accidentally impact other code
 
-### Invoke: run the function
+### Invoke: 
+run the function
+
