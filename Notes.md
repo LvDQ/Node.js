@@ -185,3 +185,30 @@ which is pretty easy to parse.
 
 ## D10 : More on require
 
+you can return by `module.exports` with `[var_name]` or `objects with name/value pair`:
+
+```
+module.exports = greet;
+
+module.exports = {
+    English : english,
+    Chinese : chinese,
+    Spanish : spanish
+};
+``` 
+
+then you can pass the return to a variable:
+```
+var greet = require('./D10_greet');
+```
+
+then invoke it:
+
+```
+greet.English();
+greet.Chinese();
+greet.Spanish();
+```
+
+the require can also import an folder with all of the .js files in the folder.
+
