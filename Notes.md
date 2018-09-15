@@ -69,6 +69,8 @@ then go to original files run by:
 
 ## D4: Object Literals
 
+`Name/Value Pair`: A name which maps to a value by `:`, e.g. `firstname: 'John'`, `firstname: [var_name]`
+
 if we want to build a structure, just use `{}` and link methods or objects by using `,`, for example:
 
 	var person = {
@@ -180,3 +182,6 @@ Javascript engines are built to understand it.
 ```
 
 which is pretty easy to parse.
+
+## D10 : More on require
+
