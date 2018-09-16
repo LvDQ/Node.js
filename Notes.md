@@ -325,3 +325,33 @@ greet5();
 `Revealing Module Pattern`: Exposing only the properties and methods you want via an returned object.
 
 A very common and clean way to structure and protect code within modules, which protect module contexts.
+
+
+
+## D12: exports vs module.exports
+
+The two var should be just the same, but different when you change one of them. That is because:
+
+`When you set a object var to a premitive data value, it's actually create and point to a new memory.`
+
+
+`Mutate`: To change somthing.
+
+For example, adding a method or property to an object means you've `mutated` the object.
+
+
+`Conclusion`: Just use `module.exports` only.
+
+## D13: Requiring Native(Core) Modules
+
+```
+var util = require('util');
+//if it's core module, don't add './', and then node.js will search core lib modules
+var name = 'Tony';
+
+var greeting = util.format('Hello,%s',name);
+util.log(greeting);
+//output: 16 Sep 11:20:37 - Hello,Tony
+```
+
+

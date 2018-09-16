@@ -28,3 +28,8 @@ greet3b.greet();
 var greet4 = require('./D11_greet4');
 var greet4 = new greet4();
 greet4.greet();
+
+
+//protected way!
+var greet5 = require('./greet5').greet;
+greet5();
