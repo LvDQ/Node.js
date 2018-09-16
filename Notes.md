@@ -354,4 +354,21 @@ util.log(greeting);
 //output: 16 Sep 11:20:37 - Hello,Tony
 ```
 
+## Web Server Checklist
+
+
+This is  a list of some of the things that Javascript needed in order to be able to manage a server:(Node.js help to expand them)
+
+- Better Ways to Organize Code into Reusable Pieces
+
+- Ways to Deal with Files
+
+- The Ability to Communicate over the Internet
+
+- The Ability to Accept Requests and Send Responses
+
+-  A Way to Deal with Work that Takes a Long Time.
+
+
+
 
