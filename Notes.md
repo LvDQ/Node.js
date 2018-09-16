@@ -212,3 +212,116 @@ greet.Spanish();
 
 the require can also import an folder with all of the .js files in the folder.
 
+
+## `D11: Module Patterns`(Important!)
+
+1. greet1.js
+```
+module.exports = function(){
+    console.log('Hello world');
+};
+
+```
+
+app.js
+
+```
+var greet = require('./D11_greet1');
+greet();
+```
+
+2. greet2.js
+```
+module.exports.greet = function(){
+    console.log('Hello world');
+}
+```
+
+app.js
+```
+
+//module.exports.greet = function()
+var greet2 = require ('./D11_greet2').greet;
+greet2();
+
+//if var greet2 = require('./D11_greet2');
+// then we need use by greet2.greet();
+```
+
+3. greet3.js
+```
+function Greet(){
+    this.greeting = 'Hello world!';
+    this.greet = function(){
+        console.log(this.greeting);
+    }
+}
+
+module.exports = new Greet();
+```
+
+app.js
+```
+//return new object
+var greet3 = require('./D11_greet3');
+greet3.greet();
+greet3.greeting = 'Change hello world!';
+
+var greet3b = require('./D11_greet3');
+greet3b.greet();
+
+//Output Change hello world!
+// the two object are the same one!
+//because there are cachedModules
+//Object passed by reference
+```
+
+4. greet4.js
+```
+function Greet(){
+    this.greeting = 'Hello world~!';
+    this.greet = function(){
+        console.log(this.greeting);
+    }
+}
+
+//no ()behind the Greet!
+module.exports = Greet;
+```
+
+app.js
+```
+//What if I don't want to create the same object?
+//do not return a instance created by require, but return a constructor
+var greet4 = require('./D11_greet4');
+var greet4 = new greet4();
+greet4.greet();
+```
+
+5. greet5.js
+```
+var greeting = 'Hello world5555!';
+function greet(){
+    console.log(greeting);
+}
+
+// this way the program is protected
+//people out side cannot use code other than you want
+module.exports = {
+    greet:greet
+}
+```
+
+app.js
+```
+
+//protected way!
+var greet5 = require('./greet5').greet;
+greet5();
+```
+
+
+
+`Revealing Module Pattern`: Exposing only the properties and methods you want via an returned object.
+
+A very common and clean way to structure and protect code within modules, which protect module contexts.
