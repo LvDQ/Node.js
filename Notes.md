@@ -371,4 +371,19 @@ This is  a list of some of the things that Javascript needed in order to be able
 
 
 
+## E1 : Events:
+
+`Event`: Something that has happend in our app that we can respond to
+
+In Node we actually talk about two different kinds of events.
+
+`System Events`: C++ core from libuv. 
+
+`Custom Events`: Javascript core. -- event emitter
+
+
+
+## E2: Javascript aside: Object properties, First class functions,and arrays
+
+
 
