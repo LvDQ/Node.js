@@ -28,7 +28,7 @@ arr.push(function(){
     console.log('Hello world 3');
 });
 
-// forEach is a kind of  a loop
+// forEach is a kind of  a loop, invoke three functions
 arr.forEach(function(item){
     item();
 })
