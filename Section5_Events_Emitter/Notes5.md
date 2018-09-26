@@ -46,4 +46,12 @@ arr.forEach(function(item){
 In javascript's case, the listener will be a function.
 
 
+Details show's in the E3.js files
+
+but this is not the way node.js.
+
+we will talk about what is node.js way to do this event emitters.
+
+
+
 
